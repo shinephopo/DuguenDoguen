@@ -75,6 +75,9 @@ ul.info-nav > li.active > a{
 .notice-con{
     display: inline;
     font-weight: 600;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
 }
 .important{
     color: #000;
