@@ -73,7 +73,8 @@ ul.info-nav > li.active > a{
     display: inline-block;
 }
 .notice-con{
-    display: inline;
+    display: inline-block;
+    width: 80%;
     font-weight: 600;
     text-overflow:ellipsis;
     white-space:nowrap;
