@@ -1,6 +1,6 @@
 <div class="models_list-item">
   <div class="models-bg">
-    <img src="../duguen_imgs/models-list_04.jpg" alt="">
+    <img src="duguen_imgs/models-list_04.jpg" alt="">
     <div class="overlay">
       <div class="sns">
         <a class="ro15" href="#">BLOG</a>
@@ -17,7 +17,7 @@
 </div>
 <div class="models_list-item">
   <div class="models-bg">
-    <img src="../duguen_imgs/models-list_07.jpg" alt="">
+    <img src="duguen_imgs/models-list_07.jpg" alt="">
     <div class="overlay">
       <div class="sns">
         <a class="ro15" href="#">BLOG</a>
@@ -34,7 +34,7 @@
 </div>
 <div class="models_list-item">
   <div class="models-bg">
-    <img src="../duguen_imgs/models-list_08.jpg" alt="">
+    <img src="duguen_imgs/models-list_08.jpg" alt="">
     <div class="overlay">
       <div class="sns">
         <a class="ro15" href="#">BLOG</a>
