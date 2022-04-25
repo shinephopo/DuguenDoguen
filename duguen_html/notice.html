@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuguenDoguen, Professional models</title>
+    <!--Js-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../duguen_js/common.js"></script>
+    <!--css연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../duguen_css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../duguen_css/notice.css"/>
+  </head>
+  <body>
+    <header>
+      <h1 class="main_logo"><a class="font-color_gray" href="index.html">Duguen<span class="point-color_main">Doguen</span></a></h1>
+      <div class="gnb">
+          <ul class="main_menu font-color_gray">
+              <li><a href="greeting.html" class="menu-title">ABOUT</a>
+                  <ul class="sub_menu">
+                      <li><a href="greeting.html">Hello</a></li>
+                  </ul>
+              </li>
+              <li><a href="models.html" class="menu-title">MODEL</a>
+                  <ul class="sub_menu">
+                      <li><a href="models.html">spec</a></li>
+                  </ul>
+              <li><a href="#" class="menu-title">NEWS</a>
+                  <ul class="sub_menu">
+                      <li><a href="notice.html">notice</a></li>
+                      <li><a href="audtion.html">audition</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </header>
+    <section>
+      <div class="partners">
+        <h1 class="main">&#35;Partners</h1>
+        <!-- Swiper -->
+        <div class="swiper agency-Swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="un_partnersImg" src="../duguen_imgs/enter01.png" alt=""></div>
+            <div class="swiper-slide"><img class="un_partnersImg" src="../duguen_imgs/enter02.png" alt=""></div>
+            <div class="swiper-slide"><img class="un_partnersImg" src="../duguen_imgs/enter03.png" alt=""></div>
+            <div class="swiper-slide"><img class="un_partnersImg" src="../duguen_imgs/enter04.png" alt=""></div>
+            <div class="swiper-slide"><img class="un_partnersImg" src="../duguen_imgs/enter05.png" alt=""></div>
+            <div class="swiper-slide"><img class="un_partnersImg" src="../duguen_imgs/enter06.png" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>  
+        
+      </div>
+    </section>
+    <section>
+      <h1 class="main">&#35;Notice</h1>
+      <p class="middle point-color_main">
+        모델들의 정보와 SNS를 빠르게 확인하세요!
+      </p>
+      <ul class="info-nav">
+        <li class="active" ><a href="#!total_list">전체보기</a></li>
+        <li><a href="#!dog_list">오디션</a></li>
+        <li><a href="#!">수상</a></li>
+        <li><a class="info-nav_li" href="#!">소식</a></li>
+      </ul>
+      <div class="notice_list" id="notice_list"></div>
+      
+      <script>
+        {
+          // Asyncronous JavaScript And XML
+          // ajax 구현
+          // 클릭 했을 때 밑에 보여주기 위한 선택
+          // 클릭 이벤트 넣을거임
+          const ul = document.querySelector(".info-nav");
+          // div안에 내용을 표시하기 위해서 선택
+          const div = document.querySelector("#notice_list");
+          // 최초 로드 시 HTML 내용 보여주기
+          fetch("n_total").then((response) => {
+            response.text().then((text) => {
+              div.innerHTML = text;
+            });
+          });
+
+          // 탭(리스트) 클릭할 때 마다 ajax로 #notice_list의 값을 변경(fetch)해줌
+          ul.addEventListener("click", (e) => {
+            console.log(e.target.innerHTML);
+            let fetchFiles;
+            if (e.target.innerHTML === "전체보기") {
+              fetchFiles = "n_total";
+            } else if (e.target.innerHTML === "오디션") {
+              fetchFiles = "n_aud";
+            } else if (e.target.innerHTML === "수상") {
+              fetchFiles = "n_award";
+            } else if (e.target.innerHTML === "소식") {
+              fetchFiles = "n_news";
+            }
+            fetch(fetchFiles).then((response) => {
+              response.text().then((text) => {
+                div.innerHTML = text;
+              });
+            });
+          });
+        }
+      </script>
+      <!-- 페이지네이션 -->
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </section>
+    <section class="parallax">
+      <div class="parallax-txt">
+        <h1 class="outline">&nbsp;&#35;Audition&nbsp;</h1>
+        <p>
+          <span class="sub01"
+            >&nbsp;알쏭달쏭, 오디션 기준을 안다면 더 쉽게 두근도근에 지원할텐데..
+            아닐까?&nbsp;</span
+          >
+          <span class="sub02">&nbsp;오디션 기준을 알고싶다면?&nbsp;</span>
+        </p>
+        <a href="audtion.html">&nbsp;자세히보기<span class="sub03">&nbsp;&#8227;&nbsp;</span></a>
+      </div>
+    </section>
+    <footer class="footer">
+      <span class="font-color_white"
+        >Copyright. seznan student. All Right Reserved.</span>
+    </footer>
+    <!--js 라이브러리에서 확인후 html에서 찾아서 사용해야하므로 마지막에 넣어줄 것!-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../duguen_js/notice_demo.js"></script>
+    
+  </body>
+</html>

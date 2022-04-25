@@ -1,0 +1,61 @@
+section.greeting-banner{position: relative; text-align: center;}
+#footprint-icon{
+    display: inline-block; 
+    width: 460px; height: 450px;
+    background: url("../duguen_imgs/greeting_footprint.svg");
+    background-size: 444px;
+    position: absolute; left: 95px; top: -30px;
+    z-index: -100;
+}
+section.greeting_banner > div > img{display: block; margin: 60px auto 0;}
+#camera-icon{
+    display: inline-block; 
+    width: 460px; height: 450px;
+    background: url("../duguen_imgs/greeting_camera.svg");
+    background-size: 444px;
+    position: absolute; right: 95px; top: 520px; fill: red;
+}
+
+section.greeting-banner p{
+    text-align: center; line-height: 22px;
+    margin: 20px 0;
+}
+.greeting-list{
+    width: 90%; margin: 120px auto 140px;
+    display: flex; flex-wrap: wrap;
+}
+.greeting-list > div{
+    display: block; width: 50%;
+    text-align: center;
+}
+
+.greeting-list > div > .greeting-pic{width: 100%; }
+.sub-title{
+    font-size: 25px; text-align: center; 
+    display: block; margin-top: 70px;
+}
+.greeting-list > div > h3{
+    font-size: 50px; font-weight: 600;  line-height: 45px;
+    letter-spacing: 15px; text-align: center;
+}
+.greeting-bar{width: 100%; height: 10px; background: #FF6701; }
+.greeting-list > div > img.icon{width: 100px; margin-top: 40px;}
+
+
+.parallax{
+    background-image: url('../duguen_imgs/greeting_models.jpg');
+    background-size: 100%;
+    height: 550px;
+    /* 스크롤하는 위치에 붙어있는 효과 - 즉 페럴렉스 처럼 보이게 할 수 있다. */
+    background-attachment: fixed;
+    /* 컨테이너(parallax)의 크기가 이미지크기를 넘어선 경우 이미지를 반복하는걸 멈춘다. */
+    background-repeat: no-repeat;
+    /* backtroun 이미지의 위치를 bottom으로 지정한다. */
+    background-position: bottom;
+
+    display: flex; align-items: center; justify-content: center;
+}
+div.parallax-txt > p > .sub01{display: block; background-color: #000;}
+div.parallax-txt > p > .sub02{background-color: #000;}
+div.parallax-txt > a{ background-color: #000; color: #fff;}
+div.parallax-txt > a > span{font-size: 25px; line-height: 14px;}

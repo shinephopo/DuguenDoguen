@@ -1,0 +1,51 @@
+<div class="models_list-item">
+  <div class="models-bg">
+    <img src="../duguen_imgs/models-list_04.jpg" alt="">
+    <div class="overlay">
+      <div class="sns">
+        <a class="ro15" href="#">BLOG</a>
+        <a class="rom5" href="#">INSTARTGRAM</a>
+      </div>
+    </div>
+  </div>
+  <ul class="point-color_main">
+    <li>김자몽</li>
+    <li><span class="wid30">출생</span><span class="bold30">2020. 05. 19</span></li>
+    <li><span class="wid30">종</span><span class="bold30">말티즈</span></li>
+    <li><span class="wid30">데뷔</span><span class="bold30">2021 - 보그뉴욕</span></li>
+  </ul>
+</div>
+<div class="models_list-item">
+  <div class="models-bg">
+    <img src="../duguen_imgs/models-list_07.jpg" alt="">
+    <div class="overlay">
+      <div class="sns">
+        <a class="ro15" href="#">BLOG</a>
+        <a class="rom5" href="#">INSTARTGRAM</a>
+      </div>
+    </div>
+  </div>
+  <ul class="point-color_main">
+    <li>아고르</li>
+    <li><span class="wid30">출생</span><span class="bold30">2018. 10. 09</span></li>
+    <li><span class="wid30">종</span><span class="bold30">시고르자브종</span></li>
+    <li><span class="wid30">데뷔</span><span class="bold30">2019 - 예능, 시골의 정석</span></li>
+  </ul>
+</div>
+<div class="models_list-item">
+  <div class="models-bg">
+    <img src="../duguen_imgs/models-list_08.jpg" alt="">
+    <div class="overlay">
+      <div class="sns">
+        <a class="ro15" href="#">BLOG</a>
+        <a class="rom5" href="#">INSTARTGRAM</a>
+      </div>
+    </div>
+  </div>
+  <ul class="point-color_main">
+    <li>오달봉</li>
+    <li><span class="wid30">출생</span><span class="bold30">2020. 05. 19</span></li>
+    <li><span class="wid30">종</span><span class="bold30">시고르 하이브리드</span></li>
+    <li><span class="wid30">데뷔</span><span class="bold30">2021 - 드라마, 계룡마을 차차차</span></li>
+  </ul>
+</div>

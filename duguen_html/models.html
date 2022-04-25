@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuguenDoguen, Professional models</title>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!--Js-->
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../duguen_js/headerjs.js"></script>
+    <!--css연결-->
+    <link type="text/css" rel="stylesheet" href="../duguen_css/models.css" />
+    <link rel="stylesheet" href="../duguen_css/common.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="main_logo"><a class="font-color_gray" href="index.html">Duguen<span class="point-color_main">Doguen</span></a></h1>
+      <div class="gnb">
+          <ul class="main_menu font-color_gray">
+              <li><a href="greeting.html" class="menu-title">ABOUT</a>
+                  <ul class="sub_menu">
+                      <li><a href="greeting.html">Hello</a></li>
+                  </ul>
+              </li>
+              <li><a href="models.html" class="menu-title">MODEL</a>
+                  <ul class="sub_menu">
+                      <li><a href="models.html">spec</a></li>
+                  </ul>
+              <li><a href="#" class="menu-title">NEWS</a>
+                  <ul class="sub_menu">
+                      <li><a href="notice.html">notice</a></li>
+                      <li><a href="audtion.html">audition</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </header>
+    <section>
+      <div class="models">
+        <h1 class="main">&#35;2021 New Models</h1>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="banner01"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner02"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner03"></div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <p class="txtTop">Model Agencies</p>
+        <p class="txtBottom">DuguenDoguen</p>
+      </div>
+    </section>
+    <section>
+      <h1 class="main">&#35;Models Info</h1>
+      <p class="middle point-color_main">
+        모델들의 정보와 SNS를 빠르게 확인하세요!
+      </p>
+      <ul class="info-nav">
+        <li class="active" ><a href="#!total_list">전체보기</a></li>
+        <li><a href="#!dog_list">강아지</a></li>
+        <li><a href="#!">고양이</a></li>
+        <li><a class="info-nav_li" href="#!">기타</a></li>
+      </ul>
+      <div class="models_list" id="models_list"></div>
+      <script>
+        {
+          // Asyncronous JavaScript And XML
+          // ajax 구현
+          // 클릭 했을 때 밑에 보여주기 위한 선택
+          // 클릭 이벤트 넣을거임
+          const ul = document.querySelector(".info-nav");
+          // div안에 내용을 표시하기 위해서 선택
+          const div = document.querySelector("#models_list");
+          // 최초 로드 시 HTML 내용 보여주기
+          fetch("m_total").then((response) => {
+            response.text().then((text) => {
+              div.innerHTML = text;
+            });
+          });
+
+          // 탭(리스트) 클릭할 때 마다 ajax로 #model_list의 값을 변경(fetch)해줌
+          ul.addEventListener("click", (e) => {
+            console.log(e.target.innerHTML);
+            let fetchFiles;
+            if (e.target.innerHTML === "전체보기") {
+              fetchFiles = "m_total";
+            } else if (e.target.innerHTML === "강아지") {
+              fetchFiles = "m_dog";
+            } else if (e.target.innerHTML === "고양이") {
+              fetchFiles = "m_cat";
+            } else if (e.target.innerHTML === "기타") {
+              fetchFiles = "m_etc";
+            }
+            fetch(fetchFiles).then((response) => {
+              response.text().then((text) => {
+                div.innerHTML = text;
+              });
+            });
+          });
+        }
+      </script>
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </section>
+    <section class="parallax">
+      <div class="parallax-txt">
+        <h1 class="outline">&nbsp;&#35;Notice&nbsp;</h1>
+        <p>
+          <span class="sub01"
+            >&nbsp;혹시,,,우리 아이도 세계 슈퍼모델의 끼를 가진건
+            아닐까?&nbsp;</span
+          >
+          <span class="sub02">&nbsp;모집기간이라면 모델지원 해볼까?&nbsp;</span>
+        </p>
+        <a href="notice.html">&nbsp;기간확인<span class="sub03">&nbsp;&#8227;&nbsp;</span></a>
+      </div>
+    </section>
+    <footer class="footer">
+      <span class="font-color_white"
+        >Copyright. seznan student. All Right Reserved.</span>
+    </footer>
+    <!--js 라이브러리에서 확인후 html에서 찾아서 사용해야하므로 마지막에 넣어줄 것!-->
+    <script src="../duguen_js/main-model_demo.js"></script>
+    <script src="../duguen_js/common.js"></script>
+  </body>
+</html>

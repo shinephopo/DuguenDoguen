@@ -1,0 +1,148 @@
+/*banner*/
+.swiper{width: 1235px; height: 700px; margin: 0 auto;}
+.swiper-button-next:after,.swiper-button-prev:after { color: #FF6701; }
+.swiper-pagination-bullet{ opacity: 1; background-color: #FFC289;}
+.swiper-pagination-bullet-active{background-color: #FF6701; opacity: 0.8;}
+.banner01{
+    width: 100%; height: 700px;
+    background-image: url(../duguen_imgs/models_swiper01.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center;
+}
+.banner02{
+    width: 100%; height: 700px;
+    background-image: url(../duguen_imgs/models_swiper02.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center;
+}
+.banner03{
+    width: 100%; height: 700px;
+    background-image: url(../duguen_imgs/models_swiper03.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center;
+}
+div.models{position: relative;}
+div.models > p.txtTop{
+    font-size: 100px; color:#fff; font-weight: 800;
+    -webkit-text-stroke:1px #FF6701;
+    position: absolute; top: 110px; left: 120px;
+    z-index: 100;
+}
+div.models > p.txtBottom{
+    font-size: 100px; color:#fff; font-weight: 800;
+    -webkit-text-stroke:1px #FF6701;
+    position: absolute; bottom: 10px; right: 120px;
+    z-index: 200;
+}
+
+/*model list*/
+ul.info-nav{
+    width: 400px; margin: 50px auto 20px;
+    display: flex; justify-content: space-between;
+}
+ul.info-nav > li {
+    width: 75px; height: 26px; 
+    text-align: center; line-height: 26px;
+    
+}
+ul.info-nav > li > a{
+    display: inline-block; width: 100%;
+    background-color: #FFC289; color: #fff; border-radius: 10px; 
+}
+ul.info-nav > li > a.active{
+    display: inline-block; width: 100%;
+    background-color: #000; color: #fff; border-radius: 10px; 
+}
+/* container */
+.models_list {
+    display: flex; flex-wrap: wrap; 
+    width: 90%; margin: 0 auto;
+  }
+  .models_list:target {
+    visibility: visible;
+    height: fit-content;
+  }
+  
+/* item */
+.models_list-item {
+    width: 24%; margin: 50px 1% 0 0;
+}
+.models_list .models_list-item:nth-of-type(4) {
+    margin-right: 0;
+}
+.models_list-item > .models-bg{
+    background-color: #FF6701;
+    width: 100%; 
+    position: relative; 
+}
+.overlay{
+    position: absolute; top: 0; left: 0;
+    height: 100%; width: 100%;
+}
+.models-bg img{
+    width: 100%; height: auto;
+    padding-top: 10px; display: block;
+}
+.models_list-item div .sns{
+    text-align: center; line-height: 50px;
+    position: absolute;
+    top: 30%; left: 28%;
+    display: flex; flex-direction: column;
+    opacity: 0;
+    transition: 1s ease;
+}
+.models-bg a{ 
+    display: inline-block; width: 180px; height: 50px;
+    background-color: black; 
+    color: #fff; font-size: 18px;
+    margin-top: 20px;
+}
+.models-bg a.ro15{transform: rotate(15deg);}
+.models-bg a.rom5{transform: rotate(-5deg);}
+/*hover*/
+.models_list-item:hover .models-bg{
+    background-color: #000; transition:.3s;
+}
+.models_list-item:hover ul.point-color_main{color: #4c4c4c;}
+.models-bg:hover .overlay .sns{opacity: 1;}
+/*list*/
+.models_list-item > ul{padding-left: 5px;}
+.models_list-item > ul > li:nth-child(1){
+    margin: 20px 0 7px;
+    font-weight: 500;
+}
+.wid30{display: inline-block; width: 60px;}
+/*pagination*/
+.pagination{
+    width: fit-content;
+    margin: 80px auto 0;
+}
+.pagination a {
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #FF6701;
+    transition:.3s;
+  }
+  .pagination a.active {
+    background-color: #000;
+    color: white;
+  }
+  .pagination a:hover:not(.active) {
+    background-color: #ff8f44;
+    color: #fff;
+    }
+
+.parallax{
+    margin-top: 220px;
+    background-image: url('../duguen_imgs/models_notice.jpg');
+    background-size: 100%;
+    height: 550px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex; align-items: center; justify-content: center;
+}
+.parallax-txt{text-align: center;}
+.parallax-txt > p{margin-bottom: 20px;}
+.parallax-txt > p > .sub01{display: block; background-color: #000;}
+.parallax-txt > p > .sub02{background-color: #000;}
+.parallax-txt > a{ background-color: #000; color: #fff; }
+.parallax-txt > a > span{font-size: 25px; line-height: 14px;}

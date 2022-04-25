@@ -1,0 +1,68 @@
+<div class="models_list-item">
+  <div class="models-bg">
+    <img src="../duguen_imgs/models-list_01.jpg" alt="">
+    <div class="overlay">
+      <div class="sns">
+        <a class="ro15" href="#">BLOG</a>
+        <a class="rom5" href="#">INSTARTGRAM</a>
+      </div>
+    </div>
+  </div>
+  <ul class="point-color_main">
+    <li>방굴탱</li>
+    <li><span class="wid30">출생</span><span class="bold30">2020. 10.03</span></li>
+    <li><span class="wid30">종</span><span class="bold30">골든햄스터</span></li>
+    <li><span class="wid30">데뷔</span><span class="bold30">2020 - 아레나</span></li>
+  </ul>
+</div>
+<div class="models_list-item">
+  <div class="models-bg">
+    <img src="../duguen_imgs/models-list_02.jpg" alt="">
+    <div class="overlay">
+      <div class="sns">
+        <a class="ro15" href="#">BLOG</a>
+        <a class="rom5" href="#">INSTARTGRAM</a>
+      </div>
+    </div>
+  </div>
+  <ul class="point-color_main">
+    <li>이강아지</li>
+    <li><span class="wid30">출생</span><span class="bold30">2017. 03. 20</span></li>
+    <li><span class="wid30">종</span><span class="bold30">골든햄스터</span></li>
+    <li><span class="wid30">데뷔</span><span class="bold30">2019 - 유튜브 어워드</span></li>
+  </ul>
+</div>
+<div class="models_list-item">
+  <div class="models-bg"> 
+    <img src="../duguen_imgs/models-list_05.jpg" alt="">
+    <div class="overlay">
+      <div class="sns">
+        <a class="ro15" href="#">BLOG</a>
+        <a class="rom5" href="#">INSTARTGRAM</a>
+      </div>
+    </div>
+  </div>
+  <ul class="point-color_main">
+    <li>김덕구</li>
+    <li><span class="wid30">출생</span><span class="bold30">2017. 04. 09</span></li>
+    <li><span class="wid30">종</span><span class="bold30">골든햄스터</span></li>
+    <li><span class="wid30">데뷔</span><span class="bold30">2020 - 보그코리아</span></li>
+  </ul>
+</div>
+<div class="models_list-item">
+  <div class="models-bg">
+    <img src="../duguen_imgs/models-list_06.jpg" alt="">
+    <div class="overlay">
+      <div class="sns">
+        <a class="ro15" href="#">BLOG</a>
+        <a class="rom5" href="#">INSTARTGRAM</a>
+      </div>
+    </div>
+  </div>
+  <ul class="point-color_main">
+    <li>드래곤</li>
+    <li><span class="wid30">출생</span><span class="bold30">1910. 03. 20</span></li>
+    <li><span class="wid30">종</span><span class="bold30">육지거북</span></li>
+    <li><span class="wid30">데뷔</span><span class="bold30">2015 - 아레나</span></li>
+  </ul>
+</div>

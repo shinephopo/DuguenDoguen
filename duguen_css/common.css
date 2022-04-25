@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:ital,wght@1,900&display=swap');
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body{overflow-x: hidden;}
+p{font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 18px;}
+a{text-decoration: none;}
+li{list-style-type: none;}
+
+body {overflow-x: hidden;}
+/*menu bar*/
+header {
+    width: 100%; height: 80px; 
+    position: fixed; right: 0; top: 0; z-index: 5000;   
+    transition: top 0.2s ease-in-out;
+}
+header.active {
+    background-color: #fff;
+    box-shadow: 2px 2px 8px 4px rgba(255, 103, 1, 0.2);
+}
+
+.main_logo {
+    width: 200px; height: 50px; padding:10px 0 0 4%; 
+    color: #4C4C4C;
+}
+.gnb {
+    width: 450px; height: 100px; margin-top: 10px;
+    text-align: center; 
+    position: absolute; top:20px; right:0px; 
+    line-height: 25px;
+}
+.main_menu {width: 420px;}
+.main_menu li {width: 140px; height: 25px; float: left;}
+.main_menu li a{display: block; width: 100%; height: 100%;}
+.main_menu > li:hover > a{background-color: #FF6701;}
+.main_menu > li:hover > ul a {background-color: #fff;}
+.main_menu > li:hover > ul a:hover {background-color: #Ffc288;}
+
+.sub_menu {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.sub_menu li {width: 140px; margin: 0;}
+.sub_menu li a {width: 100%; height: 100%; font-size: 13px; }
+
+/* 따로 추가한 내용 */
+.main_menu li:hover .sub_menu  {
+    visibility: visible;
+    height: fit-content;
+    opacity: 1;
+}
+/*flex box*/
+.middle{display: flex; justify-content: center;}
+/*title*/
+h1.main{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px; color:#FF6701; font-weight: 800;
+    margin-top: 100px; margin-bottom: 50px;
+    display: flex; justify-content: center;
+}
+h1.outline{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    color: #000; font-weight: 800; font-size: 50px; 
+    -webkit-text-stroke:1px #fff;
+    margin-bottom: 50px; background-color: #000; 
+}
+
+h2.outline{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: transparent; font-weight: 800; font-size: 50px; text-align: center;
+    /* text-shadow: -1px 0 #FF6701, 0 1px #FF6701, 1px 0 #FF6701, 0 -1px #FF6701; */
+    -webkit-text-stroke:2px #FF6701;
+    margin-top: 90px;
+}
+h2.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px; color:#FF6701; font-weight: 800;
+    text-align: center;
+}
+/*font color*/
+.sub01, 
+.sub02, 
+.sub03 {
+    color: #fff; font-weight: 300;
+}
+.font-color_white {color: #fff;}
+.font-color_black { color: #000;}
+.font-color_gray {color: #4C4C4C;}
+.point-color_main{color:#FF6701;}
+
+.st{font-family:'Noto Sans KR', sans-serif; font-weight: 800;}
+.bold60{font-family:'Noto Sans KR', sans-serif;  font-weight: 600;}
+.bold10{font-family:'Noto Sans KR', sans-serif;  font-weight: 100;}
+.bold20{font-family:'Noto Sans KR', sans-serif;  font-weight: 200;}
+.bold30{font-family:'Noto Sans KR', sans-serif;  font-weight: 300;}
+.br{display: block;}
+/*footer*/
+.footer {
+    height: 200px;
+    background-color: black;
+    /* 요소가 하나만 있을 때 중앙정렬 하는 코드 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*text-align*/
+.al_c{text-align: center;}
+.al_r{text-align: right;}
