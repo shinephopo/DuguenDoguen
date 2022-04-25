@@ -5,17 +5,17 @@
 .swiper-pagination-bullet-active{background-color: #FF6701; opacity: 0.8;}
 .banner01{
     width: 100%; height: 700px;
-    background-image: url(duguen_imgs/models_swiper01.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;
+    background-image: url('../duguen_imgs/models_swiper01.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;
     display: flex; align-items: center; justify-content: center;
 }
 .banner02{
     width: 100%; height: 700px;
-    background-image: url(duguen_imgs/models_swiper02.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;
+    background-image: url('../duguen_imgs/models_swiper02.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;
     display: flex; align-items: center; justify-content: center;
 }
 .banner03{
     width: 100%; height: 700px;
-    background-image: url(duguen_imgs/models_swiper03.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;
+    background-image: url('../duguen_imgs/models_swiper03.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;
     display: flex; align-items: center; justify-content: center;
 }
 div.models{position: relative;}
@@ -132,7 +132,7 @@ ul.info-nav > li > a.active{
 
 .parallax{
     margin-top: 220px;
-    background-image: url('duguen_imgs/models_notice.jpg');
+    background-image: url('../duguen_imgs/models_notice.jpg');
     background-size: 100%;
     height: 550px;
     background-attachment: fixed;

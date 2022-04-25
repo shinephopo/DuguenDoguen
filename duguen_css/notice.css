@@ -108,7 +108,7 @@ ul.info-nav > li.active > a{
 
 .parallax{
     margin-top: 220px;
-    background-image: url('duguen_imgs/notice_foot.jpg');
+    background-image: url('../duguen_imgs/notice_foot.jpg');
     background-size: 100%;
     height: 550px;
     background-attachment: fixed;
