@@ -1,4 +1,3 @@
-
 // @@ scroll jquery
 //mouse scoll, nav background color trans
 $(window).on("scroll", function() {
