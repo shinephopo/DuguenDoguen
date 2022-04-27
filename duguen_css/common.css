@@ -31,8 +31,8 @@ header.active {
 }
 .main_menu {width: 420px;}
 .main_menu li {width: 140px; height: 25px; float: left;}
-.main_menu li a{display: block; width: 100%; height: 100%;}
-.main_menu > li:hover > a{background-color: #FF6701;}
+.main_menu li a{display: block; width: 100%; height: 100%; color: #FF6701;}
+.main_menu > li:hover > a{background-color: #FF6701; color: #fff;}
 .main_menu > li:hover > ul a {background-color: #fff;}
 .main_menu > li:hover > ul a:hover {background-color: #Ffc288;}
 
